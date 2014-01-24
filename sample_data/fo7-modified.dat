@@ -1,0 +1,34 @@
+set machine := 1 2 3 4 5 6 7;    /** think of them as departments **/
+
+param a :=    /** Area */
+1	16
+2	4  4  /* length and width : area 16 */
+3	16
+4	36
+5	9
+6	2  4.5 /* length and width : area 9 */
+7	3  3;  /* length and width : area 9 */
+
+
+param lb := 2; /* lower bounds */
+
+param ub := 7; /* upper bounds -- these two value can be calculated by aspect ratio*/
+
+param f : /* from-to matrix - frequency info.*/
+	1	2	3	4	5	6	7:=
+1	0	1	0	0	0	0	0
+2	1	0	1	0	0	0	0
+3	0	1	0	1	0	0	0
+4	0	0	1	0	1	0	0
+5	0	0	0	1	0	1	0
+6	0	0	0	0	1	0	1
+7	0	0	0	0	0	1	0;		
+
+param lfx := 8.54; /* horizontal length of floor space */
+
+param lfy := 13; /*vertical length of floor space */
+
+param M := 10000; /* we can ignore at this time*/
+
+
+
